@@ -1,5 +1,10 @@
 package daaw.backend.persistence.repo;
 
-public class MantenimientoRepository {
-    
+import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import daaw.backend.persistence.model.Mantenimiento;
+
+@Repository
+public interface MantenimientoRepository extends JpaRepository<Mantenimiento, Long> {
+
 }
